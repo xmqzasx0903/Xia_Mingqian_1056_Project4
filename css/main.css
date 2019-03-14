@@ -1,0 +1,78 @@
+@charset "utf-8";
+/*CSS document*/
+
+.hidden
+{
+	display:none;
+}
+
+#container
+{
+	max-width:1140px;
+	color: white;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+}
+
+#square
+{
+	padding: 30px 30px 500px 30px;
+	text-align: center;
+	margin:10px;  
+	flex:1;
+	display: flex;
+	justify-content: space-around;
+}
+
+#square #square1
+{
+	background-color: blue;
+	width: 200px;
+	height: 450px;
+}
+
+#square #square2
+{
+	background-color: purple;
+	width: 200px;
+	height: 450px;
+}
+
+#square #square3
+{
+	background-color: grey ;
+	width: 200px;
+	height: 450px;
+}
+
+#square #square4
+{
+	background-color: brown;
+	width: 200px;
+	height: 450px;
+}
+
+@media screen and (max-width:641px)
+{
+	#square
+	{
+		display: flex;
+		flex-direction: column;
+	}
+	#square #square1{
+		background-color:pink;
+	   }
+	  
+	   #square #square2{
+		background-color: red;
+	   }
+	  
+	   #square #square3{
+		display: none;
+	   }
+	  
+	   #square #square4{
+		display: none;
+	   }
+}
